@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-center"> 
+    <p>
+        <button id="toggleExample1">Show Example-01</button>
+    </p>
+</div>
+
+<div id="Example-01" class="w3-center" style="display: none;">
+    <p>This is Example 01.</p>
+</div>
+
+<div class="w3-center">
+    <p>
+        <button id="toggleExample2">Show Example-02</button>
+    </p>
+</div>
+
+<div id="Example-02" class="w3-center" style="display: none;">
+    <p>This is Example 02.</p>
+</div>
+
+<script>
+    document.getElementById("toggleExample1").addEventListener("click", function() {
+        var example1 = document.getElementById("Example-01");
+        if (example1.style.display === "none") {
+            example1.style.display = "block";
+            this.textContent = "Hide Example-01";
+        } else {
+            example1.style.display = "none";
+            this.textContent = "Show Example-01";
+        }
+    });
+
+    document.getElementById("toggleExample2").addEventListener("click", function() {
+        var example2 = document.getElementById("Example-02");
+        if (example2.style.display === "none") {
+            example2.style.display = "block";
+            this.textContent = "Hide Example-02";
+        } else {
+            example2.style.display = "none";
+            this.textContent = "Show Example-02";
+        }
+    });
+</script>
+
+</body>
+</html>
