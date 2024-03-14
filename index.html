@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <style>
+      /* Custom CSS for thicker separator */
+  .thicker-separator {
+    border-width: 10px; /* Adjust the thickness as needed */
+  }
 </style>
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
@@ -29,58 +33,102 @@
 
 
 <div id="Example-01" class="w3-container w3-white">
-  <h2 class="w3-center"><b>01: Kumpung Developments of Indonesia</b></h2>
-  <p class="w3-center">Source:</p>
+    <h2 class="w3-center"><b>01: Kampung Developments of Indonesia</b></h2>
+    <p class="w3-center">
+              <a href="https://link.springer.com/chapter/10.1007/978-3-031-22239-9_4">
+            Source: <em><span>Urbanization and the Development of the Kampung in Indonesia by Ninik Suhartini & Paul Jones
+                    </em>    
+                    </span>
+        </a>
+    </p>
+    
+  
+    <div class="w3-row">
+      <div class="w3-col m6 w3-padding-large">
+        <p><b>DATA:</b></p>
+        <p>Overall the data is ...</p>
+        
+        <p>IMPROVEMENT:</p>
+        <p>1.</p>
+        <p>2.</p>
+        
+        <p><b>IDIOMS:</b></p>
+        <p>Overall the data is ...</p>
+        
+        <p>IMPROVEMENTS:</p>
+        <p>1.</p>
+        <p>2.</p>
 
-  <img src="rando.jpeg" alt="LA" style="width:30%" class="w3-left">
-  <p class="w3--left"> </p>
-  <p class="w3-left"> </p>
+      </div>
+  
+      <div class="w3-col m6">
+        <img src="Kampung of Indonesia.webp" alt="LA" style="width:100%">
 
-  <div class="w3-row">
-    <div class="w3-col m6 w3-padding-large">
-
-    <p><b>DATA:</b></p>
-    <p>Overall the data is ...</p>
-
-     <p>IMPROVEMENT:</p>
-     <p>1.</p>
-     <p>2.</p>
-
-     <p><b>IDIOMS:</b></p>
-    <p>Overall the data is ...</p>
-
-     <p>IMPROVEMENTS:</p>
-     <p>1.</p>
-     <p>2.</p>
-     
- </div>
+      </div>
+    </div>
 </div>
+  
+<hr class="w3-teal thicker-separator"> <!-- Thicker teal separator -->
 
-<div id="Example-02" class="w3-container w3-green">
+<div id="Example-02" class="w3-container">
   <h2 class="w3-center"><b>02: Jurong Canal Water Catchments</b></h2>
-  <p class="w3-center">Source:</p>
+  <p class="w3-center">
+    <a href="https://gispoint.de/gisopen-paper/7748-urban-agriculture-climate-responsive-design-strategies-for-blue-infrastructure-in-the-context-of-singapore.html?IDjournalTitle=6&cHash=a61907bf26c28fde2dfbb235c83035fe">
+  Source: <em><span>Urban Agriculture: Climate-Responsive Design Strategies for Blue Infrastructure in the Context of Singapore by Meng Xu and Pia Fricker
+          </em>    
+          </span>
+</a>
+</p>
 
-  <img src="rando.jpeg" alt="LA" style="width:30%" class="w3-left">
-  <p class="w3--left"> </p>
-  <p class="w3-left"> </p>
+     <div class="w3-row">
+        <div class="w3-col m6">
+            <img src="Jurong Canal.png" alt="LA" style="width:100%">
+         </div>
 
-  <p><b>DATA:</b></p>
-  <p>Overall the data is ...</p>
+        <div class="w3-col m6 w3-padding-large">
+            <p><b>DATA:</b></p>
+            <p>Overall the data is ...</p>
+            
+            <p>IMPROVEMENT:</p>
+            <p>1.</p>
+            <p>2.</p>
+            
+            <p><b>IDIOMS:</b></p>
+            <p>Overall the data is ...</p>
+            
+            <p>IMPROVEMENTS:</p>
+            <p>1.</p>
+            <p>2.</p>
 
-  <p>IMPROVEMENTS:</p>
-  <p>1.</p>
-  <p>2.</p>
-
-  <p><b>IDIOMS:</b></p>
-  <p>Overall the data is ...</p>
-
-  <p>IMPROVEMENTS:</p>
-  <p>1.</p>
-  <p>2.</p>
-  
-  
+        </div>
+    </div>
 </div>
 
 
+<!--Toggle Bottons -->
+<script>
+    document.getElementById("toggleExample1").addEventListener("click", function() {
+        var example1 = document.getElementById("Example-01");
+        if (example1.style.display === "none") {
+            example1.style.display = "block";
+            this.textContent = "Hide Example-01";
+        } else {
+            example1.style.display = "none";
+            this.textContent = "Show Example-01";
+        }
+    });
+
+    document.getElementById("toggleExample2").addEventListener("click", function() {
+        var example2 = document.getElementById("Example-02");
+        if (example2.style.display === "none") {
+            example2.style.display = "block";
+            this.textContent = "Hide Example-02";
+        } else {
+            example2.style.display = "none";
+            this.textContent = "Show Example-02";
+        }
+    });
+</script>
 
 </body>
+</html>
