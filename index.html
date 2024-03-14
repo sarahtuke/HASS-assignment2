@@ -4,18 +4,40 @@
 <title>IDV: Assignment 02</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 <style>
-      /* Custom CSS for thicker separator */
+/* Custom CSS for thicker separator */
   .thicker-separator {
-    border-width: 10px; /* Adjust the thickness as needed */
+    border-width: 10px; 
+    color: teal;
   }
+</style>
+
+
+<style>
+/* Custom Font Styles */
+    .justified-text {
+        text-align: justify;
+        
+    }
+
+    .large-text {
+        font-size: 24px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .body-text {
+        font-size: 14px;
+        font-family: Arial, Helvetica, sans-serif;
+        list-style-type: decimal;
+    }
 </style>
 
 <script src="https://www.w3schools.com/lib/w3.js"></script>
 <body>
 
     <h1>Assignment Two</h1>
-    <h2>Visualisation Critique</h2>
+    <h2><em>Visualisation Critique</em></h2>
 
 <div class="w3-center"> 
     <p>
@@ -31,104 +53,201 @@
 </p>
 </div>
 
-
+<!-- Start of Container for Example 01 -->
 <div id="Example-01" class="w3-container w3-white">
     <h2 class="w3-center"><b>01: Kampung Developments of Indonesia</b></h2>
     <p class="w3-center">
-              <a href="https://link.springer.com/chapter/10.1007/978-3-031-22239-9_4">
-            Source: <em><span>Urbanization and the Development of the Kampung in Indonesia by Ninik Suhartini & Paul Jones
-                    </em>    
-                    </span>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-031-22239-9_4">
+            Source: <em><span>Urbanization and the Development of the Kampung in Indonesia
+            </em>    
+            </span>
         </a>
     </p>
-    
-  
-    <div class="w3-row">
-      <div class="w3-col m6 w3-padding-large">
-        <p><b>DATA:</b></p>
-        <p>Overall the data is ...</p>
-        
-        <p>IMPROVEMENT:</p>
-        <p>1.</p>
-        <p>2.</p>
-        
-        <p><b>IDIOMS:</b></p>
-        <p>Overall the data is ...</p>
-        
-        <p>IMPROVEMENTS:</p>
-        <p>1.</p>
-        <p>2.</p>
 
-      </div>
-  
-      <div class="w3-col m6">
-        <img src="Kampung of Indonesia.webp" alt="LA" style="width:100%">
+    <div class="w3-row  w3-padding-large justified-text body-text">
+        <div class="w3-col m6 w3-padding-large ">
+            <p>The authors of article are outlining the policies and conditions that have contributed to the evolution of Kampungs in Indonesia – from challenges to strife’s. <br>
+                The data being described in this graphic is very interesting – it captures specific polices over the course of years that are consequential to the modern conditions of Indonesian Kampung’s. Dating from colonial rule of the 1930s to 2015.
+            </p>
+            
+            <p class="w3-light-gray w3-center"><b>DATA:</b><br></p>
+            
+           <p><b>Opening Critique:</b></p>
+                <p>
+                The article itself has many images referring to conditions within the areas describes, then even within this graphic, there are a lot of visual ques the author could have pulled from to enhance the visual communication. 
+                </p>
+                <p>These cues are missed, and the data remains a flat depiction of the text rather than the informative narrative being told. 
+                 </p><br>
 
-      </div>
+            <p><b>Improvement:</b><br>
+            <li> <b>Contextualise Data.</b> Although it refers to Indonesia in general, it is a challenge to decipher the scale of influence of one policy because the data remains non-contextual <br>
+            <li> <b>Chronological Order.</b> it is great that the data ordered according to its date – to enhance this quality, text legibility could be enhanced to help viewers determine scale of change over time more easily. 
+            </p><br>
+
+            <p class="w3-light-gray w3-center"><b>IDIOMS:</b><br></p>
+            <b>Opening Critique:</b></p>
+                <p>The use of colour-coordination and the linear ordering of the information is quite helpful to grasp the data hierarchy. <br>
+                </p><br>
+                <p></p>The data scale is ordinal since even though they offer define a timeline, the gaps between this timeline are uneven. For that reason, some form of ordering would visual communication. 
+                </p>
+
+            <p><b>Improvement:</b><br>
+            <li><b>Text Readability could be improved.</b>Too much text in graphic – keywords could be used and highlighted.
+            <li><b>Introduction of Images for Stronger Narrative.</b> Could be incorporated to make the narrative more dynamic and add context
+            <li><b>Better use of Colour-Coding.</b> The use of colour is great for helping group the information. Since the data is ordinal, although a randomised colour scheme could be aesthetical – a sequential colour-scheme within the selected colour tones would help group information while reading of the passage of time.
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            </p>
+
+            <p style="font-size: larger; color: gray;" class="w3-center" > <b><em>Hover image for example of an imporved graphic - only for reference </em></b></p>
+        </div>
+
+        <div class="w3-col m6" style="position: relative;">
+            <img src="Kampung of Indonesia.webp" alt="LA" style="width:100%">
+            <img src="Kampung of Indonesia_hover_history of science .jpg" alt="Hover Image" class="hover-image" >
+        </div>
     </div>
 </div>
-  
-<hr class="w3-teal thicker-separator"> <!-- Thicker teal separator -->
 
+<style>
+    /* Style for the hover image */
+    .hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Set width to match the parent image */
+        height: 100%; /* Set height to match the parent image */
+        object-fit: cover; /* Maintain aspect ratio and cover entire area */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    /* Show the hover image when hovering over its parent */
+    .w3-col.m6:hover .hover-image {
+        opacity: 1;
+    }
+</style>
+<!-- end of Container for Example 01 -->
+  
+
+<hr class="thicker-separator"> <!-- Thicker teal separator -->
+</hr>
+
+<!-- Start of Container for Example 02 -->
 <div id="Example-02" class="w3-container">
   <h2 class="w3-center"><b>02: Jurong Canal Water Catchments</b></h2>
+
+  <div class="w3-center">  
+    <button onclick="toggleImageSize()">Enlarge Example Image</button>
+</div>
+
+
   <p class="w3-center">
     <a href="https://gispoint.de/gisopen-paper/7748-urban-agriculture-climate-responsive-design-strategies-for-blue-infrastructure-in-the-context-of-singapore.html?IDjournalTitle=6&cHash=a61907bf26c28fde2dfbb235c83035fe">
-  Source: <em><span>Urban Agriculture: Climate-Responsive Design Strategies for Blue Infrastructure in the Context of Singapore by Meng Xu and Pia Fricker
-          </em>    
-          </span>
-</a>
+  Source: <em><span>Urban Agriculture: Climate-Responsive Design Strategies for Blue Infrastructure in the Context of Singapore</span></em>
+  
+</a><br>
 </p>
 
-     <div class="w3-row">
-        <div class="w3-col m6">
-            <img src="Jurong Canal.png" alt="LA" style="width:100%">
-         </div>
 
-        <div class="w3-col m6 w3-padding-large">
-            <p><b>DATA:</b></p>
-            <p>Overall the data is ...</p>
-            
-            <p>IMPROVEMENT:</p>
-            <p>1.</p>
-            <p>2.</p>
-            
-            <p><b>IDIOMS:</b></p>
-            <p>Overall the data is ...</p>
-            
-            <p>IMPROVEMENTS:</p>
-            <p>1.</p>
-            <p>2.</p>
+     <div class="w3-row justified-text body-text">
 
+        <div class="w3-col m6" style="position: relative;">
+            <img id="JurongImage" src="Jurong Canal.png" alt="LA" style="width:100%; margin-top: 110px;">
+            <img src="PiggybackYardFeasibilityStudy_Diagram2WaterQuality_WEB.jpg" alt="Hover Image" class="hover-image" >
+
+        </div>
+
+         <p>The authors of the article are proposing a design for the de-channelisation concrete river channel in Jurong, Singapore. The authors offer a speculative investigation into the plausibility of softening the embankment and hybridising the embankment to include recreational activity in a designed cool <em>micro-climate, agriculture and water harvesting.</em> 
+            <br>The data being described in this graphic is a pivotal – it depicts how much water is captured in the entire Jurong water catchment – specifically the upstream catchment the channel being redesigned captures. I,e. This graphic tells us how much water the Jurong Channel captures from rainwater in the area.
+          </p>  
+        
+      <div>
+         <p class="w3-light-gray w3-center"><b>DATA:</b><br></p>
+            
+           <p><b>Opening Critique:</b></p>
+                <p>
+                    The article uses Rhino 3D software as a platform to simulate, draft and problem-solve the problem at hand. It is therefore no surprise that the information is so 3D orientated.<br>
+                    <br>
+                    I really enjoy the paring of the information in this data-set It depicts the geographic location, monthly rainfalls and water storage capacities being discussed in a single are. How informative! 
+                    However, the informative nature may be its obstacle as it verges in being too congested. 
+                    <br>
+                    The data captures quantitative data at varies scales. The left is nominal, the right is mostly interval with some ordinal. This means, the challenge is finding ways to correspond nominal information with values attributed to their arithmetic order.  
+                </p>    
+
+            <p><b>Improvement:</b><br>
+            <li> <b>Complexity of information.</b>The information being given is dense and complex. Perhaps information that relates to each-other should be collapsed or relate in some form.<br>
+            <li> <b>Information overload subtleties.</b>There is subtle extra information that is certainly unnecessary. For example, although the contours speak to water flow, there is no way that is coming across in this image, but rather contributes to densifying the visual. 
+            <li> <b>Rain-fall and Stroage on a 3D Graph.</b>The graph on the right shows how much of the water captures on the left is stored in the months it falls in. The 3D nature of the article explains its use, but the already complex information is further complicated with use of this technique. It therefore takes away from any effort possible to link the related concepts to each-other. 
+            </p><br>
+        </div>
+         
+
+            <p class="w3-light-gray w3-center"><b>IDIOMS:</b><br></p>
+            <b>Opening Critique:</b></p>
+                <p>
+                    The pairing of the geographic map and the graph to indicate rainfall location and rainfall quantity is a great touch to help audiences grasp the context in which the rainfall qualities are being captured.
+                    <br>
+                    However, in separating the information and so densely populating it, it reads incongruently. Although, it could be argued that the simplest solution would be to separate the two graphs – the richness of it is found when the information is overlapped. This is why I ideate over its improvement. 
+                </p>
+
+            <p><b>Improvement:</b><br>
+            <li><b>Text Readability could be improved. </b>The red text on each area indicates how much people live in the sub-regions. This level of information takes too long to realise because the text is small and the information feel disconnected from what the rest of the graphic speaks of.
+            <li><b>Colour is too muted.</b> The style of the article is muted to match the default style of Rhino 3D (so it is defensible) but for the purpose of presenting information colour would assist mentally mapping the information being presented.
+            <li><b>Graph Labels.</b>As mentioned, that the graph 3D – so it is already a bit confusing to have an x, y and z axis but the labels are not clearly indicated. Year is actually not indicated at all.
+            <li><b>Information Hierarchy.</b>The graph is making special attention to the point where ‘121mm’/’1 230m3’ of rainfall fell – a dotteed line to trace the axis would help guide what date that corresponds to. That line could also correspond to the ‘3 966m3’ of water stored.<br>
+                    <br>Similarly, the number of people being catered form in the different regions of the upstream catchment area is information being highlighted, this needs to be brough out and made clearer. 
+                
+            <br>
+            <br>
+            </p>
+
+            <p style="font-size: larger; color: gray;" class="w3-center" > <b><em>Hover image for example of an imporved graphic - only for reference </em></b></p>
         </div>
     </div>
 </div>
 
 
-<!--Toggle Bottons -->
-<script>
-    document.getElementById("toggleExample1").addEventListener("click", function() {
-        var example1 = document.getElementById("Example-01");
-        if (example1.style.display === "none") {
-            example1.style.display = "block";
-            this.textContent = "Hide Example-01";
-        } else {
-            example1.style.display = "none";
-            this.textContent = "Show Example-01";
-        }
-    });
+<style>
+    /* Style for the hover image */
+    .hover-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Set width to match the parent image */
+        height: 100%; /* Set height to match the parent image */
+        object-fit: cover; /* Maintain aspect ratio and cover entire area */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
 
-    document.getElementById("toggleExample2").addEventListener("click", function() {
-        var example2 = document.getElementById("Example-02");
-        if (example2.style.display === "none") {
-            example2.style.display = "block";
-            this.textContent = "Hide Example-02";
+    /* Show the hover image when hovering over its parent */
+    .w3-col.m6:hover .hover-image {
+        opacity: 1;
+    }
+</style>
+
+<script>
+    function toggleImageSize() {
+        var image = document.getElementById("JurongImage");
+        var computedStyle = window.getComputedStyle(image);
+        var currentWidth = computedStyle.getPropertyValue("width");
+        
+        if (currentWidth === "100%") {
+            image.style.width = "150%"; // Increase image size to 150% (adjust as needed)
+            imgage.style.display
         } else {
-            example2.style.display = "none";
-            this.textContent = "Show Example-02";
+            image.style.width = "100%"; // Reset image size to 100%
         }
-    });
+    }
 </script>
+
+
+<!-- end of Container for Example 01 -->
 
 </body>
 </html>

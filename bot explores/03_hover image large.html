@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IDV: Assignment 02</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+    <h1>Assignment Two</h1>
+    <h2><em>Visualisation Critique</em></h2>
+
+    <div class="w3-center"> 
+        <p>
+            <button onclick="w3.hide('#Example-01')">Hide Example-01</button>
+            <button onclick="w3.show('#Example-01')">Show Example-01</button>
+        </p>
+    </div>
+
+    <div class="w3-center">
+        <p>
+            <button onclick="w3.hide('#Example-02')">Hide Example-02</button>
+            <button onclick="w3.show('#Example-02')">Show Example-02</button>
+        </p>
+    </div>
+
+    <!-- Start of Container for Example 01 -->
+    <div id="Example-01" class="w3-container w3-white">
+        <!-- Your Example 01 content goes here -->
+    </div>
+    <!-- end of Container for Example 01 -->
+
+    <!-- Start of Container for Example 02 -->
+    <div id="Example-02" class="w3-container">
+        <h2 class="w3-center"><b>02: Jurong Canal Water Catchments</b></h2>
+        <p class="w3-center">
+            <a href="https://gispoint.de/gisopen-paper/7748-urban-agriculture-climate-responsive-design-strategies-for-blue-infrastructure-in-the-context-of-singapore.html?IDjournalTitle=6&cHash=a61907bf26c28fde2dfbb235c83035fe">
+                Source: <em><span>Urban Agriculture: Climate-Responsive Design Strategies for Blue Infrastructure in the Context of Singapore</span></em>
+            </a><br>
+        </p>
+
+        <div class="w3-row justified-text body-text">
+            <div class="w3-col m6">
+                <button onclick="toggleImageSize()">Enlarge Image</button>
+                <img id="myImage" src="Jurong Canal.png" alt="LA" style="width:100%; margin-top: 80px;">
+            </div>
+
+            <!-- Rest of your Example 02 content goes here -->
+        </div>
+    </div>
+    <!-- end of Container for Example 02 -->
+
+    <style>
+        /* Style for the hover image */
+        .hover-image {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%; /* Set width to match the parent image */
+            height: 100%; /* Set height to match the parent image */
+            object-fit: cover; /* Maintain aspect ratio and cover entire area */
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        /* Show the hover image when hovering over its parent */
+        .w3-col.m6:hover .hover-image {
+            opacity: 1;
+        }
+
+        /* Enlarged image */
+        #myImage.enlarged {
+            width: 150%; /* Increase image size to 150% */
+        }
+    </style>
+
+    <script>
+        function toggleImageSize() {
+            var image = document.getElementById("myImage");
+            image.classList.toggle("enlarged");
+        }
+    </script>
+
+</body>
+</html>
