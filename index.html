@@ -112,25 +112,6 @@
         </div>
     </div>
 </div>
-
-<style>
-    /* Style for the hover image */
-    .hover-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%; /* Set width to match the parent image */
-        height: 100%; /* Set height to match the parent image */
-        object-fit: cover; /* Maintain aspect ratio and cover entire area */
-        opacity: 0;
-        transition: opacity 0.3s ease;
-    }
-
-    /* Show the hover image when hovering over its parent */
-    .w3-col.m6:hover .hover-image {
-        opacity: 1;
-    }
-</style>
 <!-- end of Container for Example 01 -->
   
 
@@ -142,9 +123,18 @@
   <h2 class="w3-center"><b>02: Jurong Canal Water Catchments</b></h2>
 
   <div class="w3-center">  
-    <button onclick="toggleImageSize()">Enlarge Example Image</button>
+    <button><em>Hover to Enlarge Example Image</em></button>
+    <img src="Jurong Canal.png" alt="Hover Image" class="hover-image-to-enlarge" id="exampleImage" >
+    
 </div>
 
+<!-- Hover Technique
+<div class="w3-col m6" style="position: relative;">
+    <img id="JurongImage" src="Jurong Canal.png" alt="LA" style="width:100%; margin-top: 110px;">
+    <img src="PiggybackYardFeasibilityStudy_Diagram2WaterQuality_WEB.jpg" alt="Hover Image to Enlarge" class="hover-image" >
+
+</div>
+-->
 
   <p class="w3-center">
     <a href="https://gispoint.de/gisopen-paper/7748-urban-agriculture-climate-responsive-design-strategies-for-blue-infrastructure-in-the-context-of-singapore.html?IDjournalTitle=6&cHash=a61907bf26c28fde2dfbb235c83035fe">
@@ -225,6 +215,29 @@
         transition: opacity 0.3s ease;
     }
 
+    .hover-image-to-enlarge {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%; /* Set to double width of parent image */
+        height: 200%; /* Set to double height of the parent image */
+        object-fit: cover; /* Maintain aspect ratio and cover entire area */
+        opacity: 0;
+        transition: opacity 0.3s ease;
+    }
+
+    
+    .hover-image-enlarged {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; /* Set width to match the parent image */
+        height: 100%; /* Set width to match the parent image */
+        object-fit: cover; /* Maintain aspect ratio and cover entire area */
+        opacity: 1;
+        transition: opacity 0.3s ease;
+    }
+
     /* Show the hover image when hovering over its parent */
     .w3-col.m6:hover .hover-image {
         opacity: 1;
@@ -232,20 +245,12 @@
 </style>
 
 <script>
-    function toggleImageSize() {
-        var image = document.getElementById("JurongImage");
-        var computedStyle = window.getComputedStyle(image);
-        var currentWidth = computedStyle.getPropertyValue("width");
-        
-        if (currentWidth === "100%") {
-            image.style.width = "150%"; // Increase image size to 150% (adjust as needed)
-            imgage.style.display
-        } else {
-            image.style.width = "100%"; // Reset image size to 100%
-        }
-    }
-</script>
+    function enlargeImage() {
+    var image = document.getElementById('exampleImage');
+    image.classList.toggle('hover-image-enlarged');
+}
 
+</script>
 
 <!-- end of Container for Example 01 -->
 
